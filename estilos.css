@@ -1,0 +1,101 @@
+/* Tipografía y reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #2b2b2b;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.document-container {
+  max-width: 1000px;
+  background: #ffffff;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.document-container:hover {
+  transform: scale(1.01);
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  border-bottom: 4px solid #5e81f4;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1f2a56;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  color: #5e81f4;
+  border-left: 6px solid #5e81f4;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  background: #f0f4ff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  color: #1f2a56;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Listas */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Extras visuales */
+strong {
+  color: #1f2a56;
+}
+
+@media screen and (max-width: 768px) {
+  .document-container {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+}
